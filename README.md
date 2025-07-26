@@ -1,3 +1,30 @@
+# ToDo React App
+
+A simple yet functional ToDo list application built with **React.js**.  
+It allows users to create, edit, delete, and mark tasks as complete/incomplete.
+
+## Features
+
+- Add new tasks  
+- Edit existing tasks  
+- Delete tasks  
+- Toggle task status (complete/incomplete)  
+- Filter or sort tasks (optional)  
+- **Server-side data storage using `db.json`**
+- Responsive design  
+- (Optional) Dark/Light mode
+
+## Data Persistence
+
+This app uses a local mock server (`json-server`) to persist tasks:
+
+- All task data is stored in `db.json`
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
