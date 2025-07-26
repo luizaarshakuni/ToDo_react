@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 4px;
+  margin-top: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.minibox {
+  margin: 25px 0px 15px;
+  width: 100%;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: rgba(74, 31, 119, 0.12) 0px 54px 55px,
+    rgba(74, 31, 119, 0.12) 0px -12px 30px, rgba(74, 31, 119, 0.12) 0px 4px 6px,
+    rgba(74, 31, 119, 0.12) 0px 12px 13px, rgba(74, 31, 119, 0.12) 0px -3px 5px;
+}
+
+input {
+  max-width: 518px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Montserrat;
+  padding: 4px 8px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition-property: all;
+  transition-timing-function: linear;
+}
+
+input.error::placeholder {
+  color: #a64ae9;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.second {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tasks {
+  width: 100%;
+  max-height: 350px;
+  overflow-y: scroll;
+  list-style: none;
+  font-family: Montserrat;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: rgba(74, 31, 119, 0.12) 0px 54px 55px,
+    rgba(74, 31, 119, 0.12) 0px -12px 30px, rgba(74, 31, 119, 0.12) 0px 4px 6px,
+    rgba(74, 31, 119, 0.12) 0px 12px 13px, rgba(74, 31, 119, 0.12) 0px -3px 5px;
+}
+
+.tasks li {
+  width: 100%;
+  padding: 17px 10px;
+  color: #363535;
+  cursor: pointer;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 13px;
+}
+
+li img {
+  width: 32px;
+  height: 32px;
+}
+
+.check {
+  color: #7b7b7b;
+  text-decoration: line-through;
+}
+
+p {
+  max-width: 440px;
+  width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+i {
+  width: 27px;
+  font-size: 28px;
+  color: #7b7b7b;
+  transition: all 0.5s;
+}
+
+i:hover {
+  color: #a64ae9;
+  transform: scale(1.3);
+}
+
+button {
+  background: linear-gradient(to right, #a64ae9, #5a90f4);
+  border-radius: 9px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 13px 20px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  box-shadow: rgba(74, 31, 119, 0.12) 0px 54px 55px,
+    rgba(74, 31, 119, 0.12) 0px -12px 30px, rgba(74, 31, 119, 0.12) 0px 4px 6px,
+    rgba(74, 31, 119, 0.12) 0px 12px 13px, rgba(74, 31, 119, 0.12) 0px -3px 5px;
+  transform: scale(1.03);
+}
+
+.clear_btn {
+  margin: 30px auto;
+}
+
+.notasks {
+  width: 100%;
+  padding: 17px;
+  background-color: #fff;
+  color: #7b7b7b;
+  font-size: 18px;
+  font-family: Montserrat;
+  border-radius: 7px;
+  box-shadow: rgba(74, 31, 119, 0.12) 0px 54px 55px,
+    rgba(74, 31, 119, 0.12) 0px -12px 30px, rgba(74, 31, 119, 0.12) 0px 4px 6px,
+    rgba(74, 31, 119, 0.12) 0px 12px 13px, rgba(74, 31, 119, 0.12) 0px -3px 5px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.titleIcon {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+
+.mode {
+  color: #fff;
+}
+
+.mode:hover {
+  color: #7b43a2;
+  transform: scale(1.15);
+}
+
+#light,
+#dark {
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#light {
+  display: none;
+}
+
+body.dark_mode #dark {
+  display: none;
+}
+
+body.dark_mode #light {
+  display: block;
+}
+
+body.dark_mode #light:hover {
+  color: #250566;
+}
+
+body.dark_mode button {
+  background: linear-gradient(to right, #3b0b98, #a236b5);
+}
+
+body.dark_mode li {
+  background: #363535;
+  color: #fff;
+}
+
+body.dark_mode .tasks {
+  background: #363535;
+  box-shadow: rgba(89, 87, 92, 0.12) 0px 54px 55px,
+    rgba(89, 87, 92, 0.12) 0px -12px 30px, rgba(89, 87, 92, 0.12) 0px 4px 6px,
+    rgba(89, 87, 92, 0.12) 0px 12px 13px, rgba(89, 87, 92, 0.12) 0px -3px 5px;
+}
+
+body.dark_mode .minibox,
+body.dark_mode .notasks {
+  background: #363535;
+  color: #fff;
+  box-shadow: rgba(68, 68, 69, 0.12) 0px 54px 55px,
+    rgba(68, 68, 69, 0.12) 0px -12px 30px, rgba(68, 68, 69, 0.12) 0px 4px 6px,
+    rgba(68, 68, 69, 0.12) 0px 12px 13px, rgba(68, 68, 69, 0.12) 0px -3px 5px;
+}
+
+
+body.dark_mode input {
+  color: #fff;
+}
