@@ -20,10 +20,11 @@ This app uses a local mock server (`json-server`) to persist tasks:
 
 - All task data is stored in `db.json`
 
+## Preview
 
+<img width="1456" height="757" alt="ToDoLight" src="https://github.com/user-attachments/assets/23b09053-0444-4ddd-870c-62a9929ff74a" />
 
-
-
+<img width="1474" height="757" alt="ToDoDark" src="https://github.com/user-attachments/assets/9376cdd1-67ed-4679-9a31-316a484fdd4b" />
 
 # Getting Started with Create React App
 
